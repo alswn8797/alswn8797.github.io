@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+
+  <title>Wage Calculator</title>
+      <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="app-view">
+      <header>
+        <h1>Wage Calculate</h1>
+      </header>
+	  <main>
+		<form id="wage-form">
+			<div id="wage-info-wrapper">
+				<div class="info-title"><b>WORKER'S NAME</b></div>
+				<div class="info-input-box"><input type="text" class="info-input" name="worker-name" id="name-input" placeholder="input workers name"></div>
+				<div class="info-title"><b>HOURLY RATE</b></div>
+				<div class="info-input-box"><input type="number" class="info-input" step="0.01" name="hourly-rate" id="hourly-rate" placeholder="input workers hourly rate"></div>
+			</div>
+
+			<div class="info-title"><b>WORKING HOURS</b></div>
+			<div class="calculator-wrapper">
+				<div class="calculator-title">
+					MON
+				</div>
+				<div class="calculator-input">
+					<input type="number" step="0.01" name="hours" class="wage-hours" placeholder="monday">
+				</div>
+			</div>
+			<div class="calculator-wrapper">
+				<div class="calculator-title">
+					TUE
+				</div>
+				<div class="calculator-input">
+					<input type="number" step="0.01" name="hours" class="wage-hours" placeholder="tuesday">
+				</div>
+			</div>
+			<div class="calculator-wrapper">
+				<div class="calculator-title">
+					WED
+				</div>
+				<div class="calculator-input">
+					<input type="number" step="0.01" name="hours" class="wage-hours" placeholder="wednesday">
+				</div>
+			</div>
+			<div class="calculator-wrapper">
+				<div class="calculator-title">
+					THU
+				</div>
+				<div class="calculator-input">
+					<input type="number" step="0.01" name="hours" class="wage-hours" placeholder="thursday">
+				</div>
+			</div>
+			<div class="calculator-wrapper">
+				<div class="calculator-title">
+					FRI
+				</div>
+				<div class="calculator-input">
+					<input type="number" step="0.01" name="hours" class="wage-hours" placeholder="friday">
+				</div>
+			</div>
+			<div class="calculator-wrapper">
+				<div class="calculator-title">
+					SAT
+				</div>
+				<div class="calculator-input">
+					<input type="number" step="0.01" name="hours" class="wage-hours" placeholder="saturday">
+				</div>
+			</div>
+			<div class="calculator-wrapper">
+				<div class="calculator-title">
+					SUN
+				</div>
+				<div class="calculator-input">
+					<input type="number" step="0.01" name="hours" class="wage-hours" placeholder="sunday">
+				</div>
+			</div>
+
+			<div class="calculator-wrapper">
+				<div class="calculator-title">
+					<font color="red"><b>WAGE</b></font>
+				</div>
+				<div class="calculator-input">
+					<input type="number" step="0.01" name="wage" id="wage" class="wage-hours total-wage" readonly placeholder="press CHECK button">
+				</div>
+			</div>
+
+			</form>
+      </main>
+      <footer>
+		  <script src="js/index.js"></script>
+		  <button id="button-calc" onclick="checkWage()">CHECK</button>
+		  <button id="button-add" onclick="addWage()">ADD</button>
+      </footer>
+    </div>
+
+</body>
+</html>
